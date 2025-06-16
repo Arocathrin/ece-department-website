@@ -60,6 +60,13 @@
       students who are eligible are placed on campus.
     </p>
   </section>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
 
   <section class="gallery">
     <h2>Our Campus</h2>
