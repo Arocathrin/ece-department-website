@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alumni Activities - ECE | Karunya University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="karunya-logo.jpg" alt="Karunya Logo" class="logo" />
+    <h1>Alumni Activities</h1>
+    <p class="tagline">Connecting Our Past to Empower the Future</p>
+  </header>
+
+  <nav>
+   <div class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="innovation.html">Innovation</a></li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="alumni-activities.html" class="active">Alumni Activities</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">☰</div>
+  </nav>
+
+  <section class="alumni-section">
+    <h2>Alumni Engagement at ECE</h2>
+    <p>
+      Our graduates are essentially the backbone of the department, and we are proud of their leadership in private industries and government sectors. The Department of Electronics and Communication Engineering links graduates with their alma mater.
+    </p>
+    <p>
+      Graduates contribute technically to the department as resource persons in seminars, workshops, alumnus lecture series, and faculty development programs by sharing their knowledge and skills. They also play a vital role in curriculum development by serving as members of the Board of Studies.
+    </p>
+    <p>
+      Opportunities are provided for students to connect with alumni during departmental visits, giving them valuable industrial exposure. Graduates benefit from reunions organized by the department, which help maintain professional networks and strengthen alumni-department relationships.
+    </p>
+
+    <div class="alumni-report">
+      <h3>ALUMNI MEET REPORT - 2024</h3>
+      <p>
+        Download the detailed report of our 2024 Alumni Meet, featuring event highlights, speeches, and participant contributions.
+      </p>
+      <a class="report-button" href="files/alumni-meet-2024.pdf" target="_blank">📄 Download Report (PDF)</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Division of ECE, Karunya University. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

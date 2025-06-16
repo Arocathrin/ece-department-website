@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events - ECE | Karunya University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="karunya-logo.jpg" alt="Karunya Logo" class="logo" />
+    <h1>Department Events</h1>
+    <p class="tagline">Workshops, Conferences & Student Activities</p>
+  </header>
+
+  <nav>
+   <div class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="innovation.html">Innovation</a></li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+<li><a href="alumni-activities.html">Alumni Activities </a></li>
+    </ul>
+    <div class="menu-toggle">☰</div>
+  </nav>
+
+  <section class="events-section">
+    <h2>Recent Events</h2>
+    <div class="events-grid">
+      <div class="event-card">
+        <img src="icspc23.jpg" alt="ICSPC 2023" />
+        <h3>4th International Conference on Signal Processing and Communication (ICSPC'23)</h3>
+        <p><a href="https://karunya.edu/index.php/ece/conferences" target="_blank">View Details</a></p>
+      </div>
+      <div class="event-card">
+        <img src="evogen2025.jpg" alt="EVOGEN 2025" />
+        <h3>EVOGEN 2025</h3>
+        <p><a href="https://karunya.edu/" target="_blank">View Details</a></p>
+      </div>
+      <div class="event-card">
+        <img src="amdcontest.jpg" alt="AMD AI Open World Contest" />
+        <h3>AMD AI Open World Contest</h3>
+        <p><a href="https://www.linkedin.com/posts/karunya_karunyauniversity-ece-amdcontest-activity-7204169738740989952-C_E6" target="_blank">View Details</a></p>
+      </div>
+      <div class="event-card">
+        <img src="clinical_analysis.jpg" alt="Clinical and Medical Image Analysis Conference" />
+        <h3>International Conference on Clinical and Medical Image Analysis</h3>
+        <p><a href="https://karunya.edu/cse/events" target="_blank">View Details</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Division of ECE, Karunya University. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

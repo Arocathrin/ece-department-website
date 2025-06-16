@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Innovation - ECE | Karunya University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="karunya-logo.jpg" alt="Karunya Logo" class="logo" />
+    <h1>Innovations</h1>
+    <p class="tagline">Patents & Technological Contributions from ECE</p>
+  </header>
+
+  <nav>
+   <div class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="innovation.html" class="active">Innovation</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="alumni-activities.html">Alumni Activities </a></li>
+    </ul>
+    <div class="menu-toggle">☰</div>
+  </nav>
+
+  <section class="innovation-section">
+    <h2>Recent Innovations & Patents</h2>
+    <div class="innovation-grid">
+      <div class="innovation-card">
+        <h3>TRANSLATION SYSTEM</h3>
+        <p><strong>Name of the Faculty:</strong> Dr. D. Jude Hemanth</p>
+        <p><strong>Application Number:</strong> 202241029934</p>
+        <p><strong>Publication Date:</strong> 03.06.2022</p>
+      </div>
+      <div class="innovation-card">
+        <h3>HYBRID POWER SOURCE SYSTEM FOR ELEVATORS</h3>
+        <p><strong>Name of the Faculty:</strong> Dr. H. Victor Du John</p>
+        <p><strong>Application Number:</strong> 202241022817</p>
+        <p><strong>Publication Date:</strong> 13.05.2022</p>
+      </div>
+      <div class="innovation-card">
+        <h3>BROADBAND OPTICALLY TRANSPARENT METAMATERIAL ABSORBER SELF-ENERGY HARVESTERS</h3>
+        <p><strong>Name of the Faculty:</strong> Dr. H. Victor Du John, Dr. D. Narain Ponraj</p>
+        <p><strong>Application Number:</strong> 202241015804</p>
+        <p><strong>Publication Date:</strong> 25.03.2022</p>
+      </div>
+      <div class="innovation-card">
+        <h3>AUTOMATED SELF-GUIDED ROBOT WITH A SINGLE REFERENCE WHEEL</h3>
+        <p><strong>Name of the Faculty:</strong> Dr. J. John Paul</p>
+        <p><strong>Application Number:</strong> 202441016320</p>
+        <p><strong>Publication Date:</strong> 22.03.2024</p>
+      </div>
+      <div class="innovation-card">
+        <h3>GUI BASED BOOK MISPLACEMENT AVOIDANCE SYSTEM</h3>
+        <p><strong>Name of the Faculty:</strong> Dr. Shinelet</p>
+        <p><strong>Application Number:</strong> 202341087942</p>
+        <p><strong>Publication Date:</strong> 12.01.2024</p>
+      </div>
+      <div class="innovation-card">
+        <h3>AUTOMATED SELECTIVE CIRCUIT BREAKING SYSTEM</h3>
+        <p><strong>Name of the Faculty:</strong> Dr. Tony Jose, Dr. J. Jenkin Winston, Dr. H. Victor Du John, Dr. D. Narain Ponraj</p>
+        <p><strong>Application Number:</strong> 202341083776</p>
+        <p><strong>Publication Date:</strong> 05.01.2024</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Division of ECE, Karunya University. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

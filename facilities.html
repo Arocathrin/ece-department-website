@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facilities - ECE | Karunya University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="karunya-logo.jpg" alt="Karunya Logo" class="logo" />
+    <h1>Facilities</h1>
+    <p class="tagline">Empowering Innovation with World-Class Infrastructure</p>
+  </header>
+
+  <nav>
+   <div class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="facilities.html" class="active">Facilities</a></li>
+      <li><a href="innovation.html">Innovation</a></li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="alumni-activities.html">Alumni Activities</a></li>
+    </ul>
+    <div class="menu-toggle">☰</div>
+  </nav>
+
+  <section class="facilities-section">
+    <h2>Our Campus Facilities</h2>
+    <div class="facilities-grid">
+
+      <div class="facility-card">
+        <img src="library.jpg" alt="Library" class="facility-photo" />
+        <h3>Central Library</h3>
+        <p>Modern library with a vast collection of electronics and communication resources and digital access.</p>
+        <a href="library.html" class="view-details-btn">View Details →</a>
+      </div>
+
+      <div class="facility-card">
+        <img src="lab.jpg" alt="Electronics Lab" class="facility-photo" />
+        <h3>Advanced Electronics Lab</h3>
+        <p>State-of-the-art lab equipped with oscilloscopes, signal generators, microcontrollers, and more.</p>
+        <a href="https://www.karunya.edu/ece/academiclabs" class="view-details-btn">View Details →</a>
+      </div>
+
+      <div class="facility-card">
+        <img src="ctc.jpg" alt="Computer Lab" class="facility-photo" />
+        <h3>Computer Technology Centre (CTC) Lab</h3>
+        <p>Fully equipped computing lab with AI/ML-ready systems for hands-on coding and research.</p>
+        <a href="https://www.karunya.edu/ece/academiclabs" class="view-details-btn">View Details →</a>
+      </div>
+
+      <div class="facility-card">
+        <img src="iotlab.jpg" alt="IoT Lab" class="facility-photo" />
+        <h3>IoT Innovation Hub</h3>
+        <p>Dedicated space for Internet of Things development and prototyping with real-time sensors and cloud access.</p>
+        <a href="https://www.karunya.edu/ece/researchlabs" class="view-details-btn">View Details →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Division of ECE, Karunya University. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

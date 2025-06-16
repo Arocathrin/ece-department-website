@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research - ECE | Karunya University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="karunya-logo.jpg" alt="Karunya Logo" class="logo" />
+    <h1>Research - Department of ECE</h1>
+    <p class="tagline">Empowering Innovation through Research</p>
+  </header>  <nav>
+   <div class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="innovation.html">Innovation</a></li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="alumni-activities.html">Alumni Activities </a></li>
+    </ul>
+    <div class="menu-toggle">☰</div>
+  </nav>  <section class="research-section">
+    <h2>Research Focus Areas</h2>
+    <p>
+      Our department is actively involved in cutting-edge research in the areas of VLSI, AI, IoT, Wireless Communication, and Signal Processing. We have received funding from reputed agencies like DST, ISRO, DRDO, CSIR, and ICMR.
+    </p><div class="link-boxes">
+  <a href="publications.html" target="_blank" class="research-box">Publications</a>
+  <a href="funded-projects.html" target="_blank" class="research-box">Funded Projects</a>
+  <a href="research-scholars.html" target="_blank" class="research-box">Research Scholars</a>
+  <a href="https://www.karunya.edu/research" target="_blank" class="research-box">Karunya Research Portal</a>
+</div>
+
+<h3>Research Highlights</h3>
+<div class="highlight-container">
+  <div class="highlight-slide">
+    <img id="highlightImage" src="research1.jpg" alt="Highlight 1">
+  </div>
+  <div class="highlight-buttons">
+    <button onclick="changeSlide(-1)">&#10094;</button>
+    <button onclick="changeSlide(1)">&#10095;</button>
+  </div>
+</div>
+
+  </section>  <footer>
+    <p>&copy; 2025 Division of ECE, Karunya University. All rights reserved.</p>
+  </footer>  
+  <script>
+  const images = ['research1.jpg', 'research2.jpg', 'research3.jpg', 'research4.jpg'];
+  let current = 0;
+
+  function changeSlide(direction) {
+    current = (current + direction + images.length) % images.length;
+    document.getElementById('highlightImage').src = images[current];
+  }
+
+  // 👇 Add this line for auto slide (every 2.5 seconds)
+  setInterval(() => changeSlide(1), 2500);
+
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('.nav-list').classList.toggle('active');
+  });
+</script>
+</body>
+</html>

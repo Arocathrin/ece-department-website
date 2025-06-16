@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - ECE | Karunya University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="karunya-logo.jpg" alt="Karunya Logo" class="logo" />
+    <h1>Contact Us</h1>
+    <p class="tagline">Reach Out to the ECE Department</p>
+  </header>
+
+  <nav>
+   <div class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+<li><a href="facilities.html">Facilities</a></li>
+          <li><a href="innovation.html">Innovation</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="alumni-activities.html">Alumni Activities </a></li>
+    </ul>
+    <div class="menu-toggle">☰</div>
+  </nav>
+
+  <section class="contact-section">
+    <h2>Contact Information</h2>
+    <p><strong>Dr. D. Jude Hemanth</strong><br>
+      Professor and Head, Division of ECE<br>
+      <strong>Email:</strong> <a href="mailto:hod_ece@karunya.edu">hod_ece@karunya.edu</a><br>
+      <strong>Phone:</strong> 0422-2614393
+    </p>
+
+    <p>
+      <strong>Address:</strong><br>
+      Karunya Institute of Technology and Sciences,<br>
+      Karunya Nagar, Coimbatore - 641114,<br>
+      Tamil Nadu, India.
+    </p>
+
+    <a href="https://www.karunya.edu/ece" class="external-link" target="_blank">Visit Official ECE Page</a>
+  </section>
+
+  <section class="form-section">
+    <h2>Send Us a Message</h2>
+    <form class="contact-form" action="https://formspree.io/f/xpwrrano" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Division of ECE, Karunya University. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

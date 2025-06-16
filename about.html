@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About ECE - Karunya University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="karunya-logo.jpg" alt="Karunya Logo" class="logo" />
+    <h1>Division of Electronics and Communication Engineering</h1>
+    <p class="tagline">Transforming Lives Through Electronics</p>
+  </header>
+
+  <nav>
+   <div class="navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="cantact.html">Contact</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="innovation.html">Innovation</a></li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="alumni-activities.html">Alumni Activities</a></li>
+    </ul>
+   </div>
+    <div class="menu-toggle">☰</div>
+  </nav>
+<section class="about-section">
+    <h2>History</h2>
+    <p>
+      The Division of Electronics and Communication Engineering (ECE) was established in the year 1986 and is accredited by NBA.
+      The department offers undergraduate (UG), post-graduate (PG) and Ph.D. degree programs. The department has well-equipped laboratories
+      in the areas of Electronics, Communication, IoT, VLSI, Artificial Intelligence and Data Science and is well-connected with industries.
+    </p>
+    <p>
+      The department has signed MoUs with industries like Samsung R&D Institute India-Bangalore Pvt. Ltd., Altair Engineering India Pvt. Ltd.,
+      M/S Jasmin Infotech Private Limited, Intel Technology India Pvt. Ltd., Test and Verification Solutions India Pvt. Ltd, and EinNel Technologies, India.
+    </p>
+    <p>
+      The department has experienced and committed faculty members and is on the upward trajectory in terms of research. The focus of the department is to publish
+      research papers only in WoS/Scopus journals with high impact factors. Collaborative research work is carried out with top institutions outside India, which is
+      an added advantage.
+    </p>
+    <p>
+      A significant number of funded projects have been received from various agencies such as DST, DRDO, ISRO, CSIR and ICMR to the tune of INR 2.7 crore.
+      Consultancy works in cutting-edge technologies such as antenna fabrication and machine learning are being carried out in the department.
+    </p>
+    <p>
+      The faculty and students are also associated with professional bodies like IEEE and IETE to enhance their research activities. Further, the students of the
+      department are encouraged to take up in-plant trainings, summer internships and full-semester project work at industries and the department ensures that all
+      students who are eligible are placed on campus.
+    </p>
+  </section>
+
+  <section class="gallery">
+    <h2>Our Campus</h2>
+    <div class="carousel-wrapper">
+      <button class="prev">&#10094;</button>
+      <div class="carousel-images">
+        <img src="karunya1.jpg" alt="Karunya Image 1" />
+        <img src="karunya2.jpg" alt="Karunya Image 2" />
+        <img src="karunya3.jpg" alt="Karunya Image 3" />
+        <img src="karunya4.jpg" alt="Karunya Image 4" />
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Division of ECE, Karunya University. All rights reserved.</p>
+  </footer>
+  <script>
+  const carousel = document.querySelector(".carousel-images");
+  const images = document.querySelectorAll(".carousel-images img");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+  let index = 0;
+  let interval;
+
+  function showImage(idx) {
+    const width = carousel.clientWidth;
+    carousel.style.transform = `translateX(${-width * idx}px)`;
+  }
+
+  function nextImage() {
+    index = (index + 1) % images.length;
+    showImage(index);
+  }
+
+  function prevImage() {
+    index = (index - 1 + images.length) % images.length;
+    showImage(index);
+  }
+
+  function startAutoSlide() {
+    interval = setInterval(nextImage, 3000); // Change image every 3 sec
+  }
+
+  function stopAutoSlide() {
+    clearInterval(interval);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    stopAutoSlide();
+    nextImage();
+    startAutoSlide();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    stopAutoSlide();
+    prevImage();
+    startAutoSlide();
+  });
+
+  window.addEventListener("resize", () => showImage(index));
+  
+  startAutoSlide(); // Start autoplay when page loads
+  </script>
+</body>
+
+</html>
