@@ -151,14 +151,14 @@ ul {
 }
 .video-section {
   text-align: center;
-  padding: 30px 60px;
+  padding: 60px 20px;
   background-color: #f4f6f9;
 }
 
 .video-container {
   display: flex;
   justify-content: center;
-  gap: 10px 60px;
+  gap: 10px 30px;
   flex-wrap: wrap; /* Responsive */
 }
 
