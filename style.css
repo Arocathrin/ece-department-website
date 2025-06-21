@@ -149,7 +149,26 @@ ul {
 .achievements{
   color:black;
 }
+.video-section {
+  text-align: center;
+  padding: 30px 60px;
+  background-color: #f4f6f9;
+}
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px 60px;
+  flex-wrap: wrap; /* Responsive */
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 350px;
+  height: 270px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 .testimonial {
   background-color: #6495ED;
   color:black;
