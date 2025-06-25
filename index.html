@@ -195,5 +195,32 @@
     function toggleMenu() {
       document.getElementById('navList').classList.toggle('active');
     }
-  </script></body>
+  </script>
+  <script>
+  function openTab(evt, tabName) {
+    const contents = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-btn');
+
+    contents.forEach(c => c.classList.remove('active'));
+    buttons.forEach(b => b.classList.remove('active'));
+
+    document.getElementById(tabName).classList.add('active');
+    evt.currentTarget.classList.add('active');
+  }
+</script>
+  <script>
+  function showContent(currentCard) {
+    const allCards = document.querySelectorAll(".accordion-card");
+
+    allCards.forEach(card => {
+      if (card !== currentCard) {
+        card.querySelector(".card-content").style.display = "none";
+      }
+    });
+
+    const content = currentCard.querySelector(".card-content");
+    content.style.display = content.style.display === "block" ? "none" : "block";
+  }
+</script>
+</body>
 </html>
