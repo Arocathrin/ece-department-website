@@ -6,81 +6,110 @@
   <title>Funded Projects - ECE Department</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'open sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f6f9;
-    }
+<style>
+  /* Global fix for overflow issue */
+  * {
+    box-sizing: border-box;
+  }
 
-    header {
-      background-image: url('bg.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
+  html, body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
+  }
+
+  header {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  .funded-section {
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .funded-section h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 1rem;
+  }
+
+  .org-logo {
+    width: 100%;
+    max-width: 300px; /* optional */
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    table-layout: auto;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px 16px;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  th {
+    background-color: #003366;
+    color: white;
+  }
+
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    table, th, td {
+      font-size: 14px;
     }
 
     h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    .funded-section {
-      padding: 40px 20px;
-      text-align: center;
-      width:100%;
-      max-width:100%;
-      margin:0 auto;
+      font-size: 1.8rem;
     }
 
     .funded-section h2 {
-      font-size: 2rem;
-      color: #003366;
-      margin-bottom: 1rem;
+      font-size: 1.5rem;
     }
 
-    .org-logo {
-      max-width: 800px;
-      margin-bottom: 1rem;
+    header {
+      padding: 40px 10px;
     }
-
-    table {
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto 3rem auto;
-      border-collapse: collapse;
-      background-color: white;
-      color:black;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px 16px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #003366;
-      color: white;
-    }
-
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      table, th, td {
-        font-size: 14px;
-      }
-    }
-  </style>
+  }
+</style> 
 </head>
 <body>
 
