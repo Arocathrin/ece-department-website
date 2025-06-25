@@ -124,7 +124,34 @@ section h2 {
   text-align: center;
   color: #000000;
 }
+.download-box {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a237e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  gap: 10px;
+}
 
+.download-box .text {
+  color: white;
+}
+
+.download-box .download-text {
+  color: #90caf9;
+  font-weight: normal;
+}
+.download-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
 .vm-box {
   display: flex;
   flex-direction: column;
@@ -149,6 +176,62 @@ ul {
 .achievements{
   color:black;
 }
+.custom-section{
+  background-color:#f4f6f9;
+  }
+  
+.row-container {
+      display: flex;
+      gap: 70px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .toggle-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 250px;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    label.toggle-btn {
+      background: #004080;
+      color: white;
+      padding: 15px 20px;
+      font-size: 15px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100%;
+    }
+
+    label.toggle-btn:hover {
+      background: #0066cc;
+    }
+
+    .content-box {
+      display: none;
+      background: #fff;
+      color:black;
+      border: 2px solid #0066cc;
+      border-top: none;
+      padding: 15px;
+      margin-top: -8px;
+      width: 100%;
+      border-radius: 0 0 10px 10px;
+      text-align: left;
+    }
+
+    input[type="checkbox"]:checked + label + .content-box {
+      display: block;
+    }
+
 .video-section {
   text-align: center;
   padding: 60px 20px;
