@@ -425,6 +425,47 @@ footer{
 .next {
   right: 10px;
 }
+
+.pdf_links {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.pdf_links li {
+  margin: 20px 0;
+}
+
+.pdf-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #1434A4;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.pdf-btn:hover {
+  background-color: #0056b3;
+}
+.pdf-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #1434A4;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.pdf-btn:hover {
+  background-color: #0056b3;
+}
 .faculty-section {
     max-width: 1200px;
     margin: 2rem auto;
