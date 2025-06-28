@@ -838,6 +838,34 @@ footer{
       margin: 5px 0;
       color: #333;
     }
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 10px; /* Adjust timeline line */
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  .left, .right {
+    left: 0;
+    width: 100%;
+  }
+
+  .left::before, .right::before {
+    left: 30px;
+  }
+
+  .content {
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+  }
+}
     
 
 .awards-section {
