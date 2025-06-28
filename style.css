@@ -780,47 +780,66 @@ footer{
   background-color: #005fa3;
   transform: translateY(-2px);
 }
-.innovation-section {
-  padding: 40px;
-  background-color: #f4f6f9;
-}
+.page-container{
+ min-height:100vh;
+ display:flex;
+ flex-direction:column;
+ }
+ 
+.innovation-section{
+  background-color:f4f6f9;
+  flex:1;
+  padding:40px 20px;
+  }
+.timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color:white;
+    }
 
-.innovation-section h2 {
-  text-align: center;
-  color: #0b3d91;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 30px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: #0a1e41;
+    }
 
-.innovation-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
-}
+    .timeline-entry {
+      position: relative;
+      margin-left: 60px;
+      margin-bottom: 40px;
+      background: #f4f6f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
 
-.innovation-card {
-  background-color: #6495ED;
-  color:black;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: none;
-}
+    .timeline-entry::before {
+      content: '';
+      position: absolute;
+      left: -32px;
+      top: 20px;
+      width: 16px;
+      height: 16px;
+      background-color: #0a1e41;
+      border-radius: 50%;
+    }
 
-.innovation-card:hover {
-  transform: none;
-}
+    .timeline-entry h3 {
+      margin-top: 0;
+      color: #0a1e41;
+    }
 
-.innovation-card h3 {
-  color: #0b3d91;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
+    .timeline-entry p {
+      margin: 5px 0;
+      color: #333;
+    }
+    
 
-.innovation-card p {
-  margin: 5px 0;
-  font-size: 15px;
-}
 .awards-section {
   padding: 40px;
   background-color: #f4f6f9;
