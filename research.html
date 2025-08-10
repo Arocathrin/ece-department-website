@@ -43,35 +43,69 @@
   <a href="https://www.karunya.edu/research" target="_blank" class="research-box">Karunya Research Portal</a>
 </div>
 
-<h3>Research Highlights</h3>
-<div class="highlight-container">
-  <div class="highlight-slide">
-    <img id="highlightImage" src="research1.jpg" alt="Highlight 1">
-  </div>
-  <div class="highlight-buttons">
-    <button onclick="changeSlide(-1)">&#10094;</button>
-    <button onclick="changeSlide(1)">&#10095;</button>
-  </div>
-</div>
+<section class="gallery">
+    <h2>Research Highlights</h2>
+    <div class="carousel-wrapper">
+      <button class="prev">&#10094;</button>
+      <div class="carousel-images">
+        <img src="research1.jpg" alt="Karunya Image 1" />
+        <img src="research2.jpg" alt="Karunya Image 2" />
+        <img src="research3.jpg" alt="Karunya Image 3" />
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
 
   </section>  <footer>
     <p>&copy; 2025 Division of ECE, Karunya University. All rights reserved.</p>
   </footer>  
   <script>
-  const images = ['research1.jpg', 'research2.jpg', 'research3.jpg', 'research4.jpg'];
-  let current = 0;
+  const carousel = document.querySelector(".carousel-images");
+  const images = document.querySelectorAll(".carousel-images img");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+  let index = 0;
+  let interval;
 
-  function changeSlide(direction) {
-    current = (current + direction + images.length) % images.length;
-    document.getElementById('highlightImage').src = images[current];
+  function showImage(idx) {
+    const width = carousel.clientWidth;
+    carousel.style.transform = `translateX(${-width * idx}px)`;
   }
 
-  // 👇 Add this line for auto slide (every 2.5 seconds)
-  setInterval(() => changeSlide(1), 2500);
+  function nextImage() {
+    index = (index + 1) % images.length;
+    showImage(index);
+  }
 
-  document.querySelector('.menu-toggle').addEventListener('click', () => {
-    document.querySelector('.nav-list').classList.toggle('active');
+  function prevImage() {
+    index = (index - 1 + images.length) % images.length;
+    showImage(index);
+  }
+
+  function startAutoSlide() {
+    interval = setInterval(nextImage, 3000); // Change image every 3 sec
+  }
+
+  function stopAutoSlide() {
+    clearInterval(interval);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    stopAutoSlide();
+    nextImage();
+    startAutoSlide();
   });
-</script>
+
+  prevBtn.addEventListener("click", () => {
+    stopAutoSlide();
+    prevImage();
+    startAutoSlide();
+  });
+
+  window.addEventListener("resize", () => showImage(index));
+  
+  startAutoSlide(); // Start autoplay when page loads
+  </script>
 </body>
 </html>
